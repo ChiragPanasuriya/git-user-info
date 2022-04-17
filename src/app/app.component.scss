@@ -1,0 +1,91 @@
+$user_list_color : #f7e9e6;
+$repo_list_color: #eae7f8;
+$pr_list_color: #e7f7f9 ;
+$box_color: #ebd1f6;
+$red_error: rgb(255, 163, 135) ;
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.flex-container > div {
+  display: flex;
+  justify-content: center;
+  background-color: #dcf9ec;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+}
+
+.container {
+  background-color: #83690a;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  height: 468px;
+  font-size: 14px;
+}
+
+.user-container {
+  background-color: $user_list_color;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  height: 518px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.info-container {
+  .mat-list-base {
+    padding: 0px;
+  }
+  margin: 10px;
+  font-size: 30px;
+  font-size: 14px;
+  .container-repo {
+    padding: 20px;
+    background-color: $repo_list_color;
+    height: 250px;
+    overflow: auto;
+  }
+  .container-pr {
+    padding: 20px;
+    background-color: $pr_list_color;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 250px;
+    overflow: auto;
+    .ic-adj {
+      position: relative;
+      top: 7px;
+    }
+    .error-msg {
+      padding-left: 30px;
+      color: $red_error;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .red {
+      background-color: $red_error;
+    }
+  }
+}
+
+.bottom-container {
+  background-color: $box_color;
+  margin: 30px;
+  padding: 40px 20px 0;
+  font-size: 30px;
+  height: 100px;
+  font-size: 14px;
+  overflow: auto;
+
+  vertical-align: middle;
+}
+
