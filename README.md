@@ -1,27 +1,26 @@
-# GitUserInfo
+Exercise created with public GitHub API info
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+Code is added to git repo at https://github.com/ChiragPanasuriya/git-user-info
 
-## Development server
+I also deployed application on FireBase
+URL : https://chirag-api.web.app/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You can access it directly from any browser.
 
-## Code scaffolding
+All the given requirements are covered in this submission.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Future work :
+1.Unit test cases
+2.Design correction with more material UI components
+3.Any improvement as per new requirement.
 
-## Build
+Checked List :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1.I started with the reading requirement multiple times and then drew all sections on paper how data will be displayed.This helps me clear some design doubts and how to create component
+2.As it was a simple one page only so I used Angular initial APP component, In case of more functionality It will be a better idea to create separate components
+3.Created a service where I can call different APIs to get the Git API data. Benefit of the service is now I can use the same service in multiple components with code reusability.
+4. Displayed all the user name list in the left side column. Fetch all the accounts from developer GIT API
+5. On click of account, all the respective repos will be listed down in right column 1st row
+6. On click of repo name, all the open pull requests will be listed down in 2nd row
+7. If PR is open for more than 5 days then color red, if open for more than 2 days then color yellow and in case of less then 2 days no color.
+8. Another row containing 4 evenly sized elements One, two, three and four is added at the end in next row
